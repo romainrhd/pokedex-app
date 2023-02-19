@@ -1,7 +1,9 @@
 <template>
-  <div>
+  <div class="flex flex-col min-h-screen">
     <AppHeader />
-    <slot />
+    <main class="flex flex-col flex-grow">
+      <slot />
+    </main>
     <AppFooter />
   </div>
 </template>
