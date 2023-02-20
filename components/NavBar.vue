@@ -1,14 +1,21 @@
 <template>
-  <nav class="flex w-full">
-    <ul class="flex flex-grow justify-between">
-      <li>
-        <NuxtLink to="/">Home</NuxtLink>
+  <nav class="flex w-full border-t py-2">
+    <!-- List of link centerd -->
+    <ul class="flex grow justify-items-center">
+      <li class="flex grow justify-center">
+        <a>
+          <Icon name="heroicons:home" font-size="32px" />
+        </a>
       </li>
-      <li>
-        <NuxtLink to="/about">About</NuxtLink>
+      <li class="flex grow justify-center">
+        <a>
+          <Icon name="heroicons:magnifying-glass" font-size="32px" />
+        </a>
       </li>
-      <li>
-        <NuxtLink to="/contact">Contact</NuxtLink>
+      <li class="flex grow justify-center">
+        <a>
+          <Icon name="heroicons:user" font-size="32px" />
+        </a>
       </li>
     </ul>
   </nav>
