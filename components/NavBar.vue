@@ -1,22 +1,26 @@
 <template>
   <nav class="flex w-full border-t py-2">
-    <!-- List of link centerd -->
-    <ul class="flex grow justify-items-center">
-      <li class="flex grow justify-center">
-        <a>
+    <ul class="flex grow">
+      <li>
+        <NuxtLink to="/">
           <Icon name="heroicons:home" font-size="32px" />
-        </a>
+        </NuxtLink>
       </li>
-      <li class="flex grow justify-center">
-        <a>
-          <Icon name="heroicons:magnifying-glass" font-size="32px" />
-        </a>
-      </li>
-      <li class="flex grow justify-center">
-        <a>
+      <li>
+        <NuxtLink to="/profile">
           <Icon name="heroicons:user" font-size="32px" />
-        </a>
+        </NuxtLink>
       </li>
     </ul>
   </nav>
 </template>
+
+<style scoped>
+li {
+  @apply flex flex-grow justify-center text-gray-500;
+}
+
+.router-link-active {
+  @apply text-blue-500
+}
+</style>
