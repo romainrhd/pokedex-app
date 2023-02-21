@@ -5,6 +5,8 @@
 </template>
 
 <script lang="ts" setup>
+import PokemonCardList from '../molecules/PokemonCardList.vue';
+
 const pokemons = ref([
   {
     nationalNumber: '001',

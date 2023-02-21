@@ -10,6 +10,10 @@
 </template>
 
 <script lang="ts" setup>
+import AppFooter from '~~/components/organisms/AppFooter.vue';
+import AppHeader from '~~/components/organisms/AppHeader.vue';
+import ModalSearch from '~~/components/organisms/ModalSearch.vue';
+
 const showModal = ref(false);
 
 const toggleModal = () => {

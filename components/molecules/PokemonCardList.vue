@@ -16,17 +16,9 @@
 </template>
 
 <script lang="ts" setup>
-import LabelType from "~/components/LabelType.vue";
+import LabelType from '../atoms/LabelType.vue';
 
-const props = defineProps<{
-  pokemon: {
-    nationalNumber: string;
-    name: string;
-    types: {
-      name: string;
-      color: string;
-    }[]
-    image: string;
-  }
+defineProps<{
+  pokemon: Pokemon
 }>();
 </script>
