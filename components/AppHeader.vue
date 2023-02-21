@@ -1,8 +1,8 @@
 <template>
-  <header class="flex flex-shrink justify-between p-4 w-full bg-red-500">
+  <header class="flex flex-shrink justify-between p-4 w-full border-b">
     <span>Pokedex</span>
-    <div>
-      <Icon name="heroicons:moon" />
-    </div>
+    <span class="cursor-pointer">
+      <Icon name="heroicons:magnifying-glass" />
+    </span>
   </header>
 </template>
