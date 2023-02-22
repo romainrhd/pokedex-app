@@ -1,5 +1,5 @@
 <template>
-  <footer class="flex flex-shrink w-full">
+  <footer class="md:hidden fixed bottom-0 bg-white flex flex-shrink w-full">
     <NavBar @open-search-modal="openSearchModal"/>
   </footer>
 </template>

@@ -3,4 +3,6 @@ interface Pokemon {
   name: string;
   types: PokemonType[];
   image: string;
+
+  caught: boolean;
 }

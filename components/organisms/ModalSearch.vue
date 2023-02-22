@@ -8,7 +8,7 @@
             class="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-black"
             placeholder="Rechercher un Pokémon"
         />
-        <div class="grid grid-cols divide-y h-96 overflow-auto">
+        <div class="grid grid-cols divide-y h-96 overflow-auto mt-4">
           <div class="flex w-full items-center cursor-pointer hover:bg-gray-200">
             <div class="basis-1/3">
               <img src="https://www.pokepedia.fr/images/3/3f/Sprite_0001_HOME.png" alt="Bulbizarre">

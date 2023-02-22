@@ -1,7 +1,7 @@
 <template>
-  <div class="flex flex-col min-h-screen">
+  <div class="flex flex-col min-h-screen pb-20">
     <AppHeader @open-search-modal="toggleModal"/>
-    <main class="flex flex-col flex-grow container mx-auto mt-4">
+    <main class="flex flex-col flex-grow container mx-auto px-4 mt-4">
       <ModalSearch v-if="showModal" @close-search-modal="toggleModal"/>
       <slot />
     </main>

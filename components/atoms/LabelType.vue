@@ -8,12 +8,20 @@ defineProps<{
 }>();
 </script>
 
-<style lang="scss" scoped>
+<style scoped lang="scss">
 .purple {
   @apply bg-purple-500;
 }
 
 .green {
   @apply bg-green-500;
+}
+
+.red {
+  @apply bg-red-500;
+}
+
+.orange {
+  @apply bg-orange-500;
 }
 </style>
