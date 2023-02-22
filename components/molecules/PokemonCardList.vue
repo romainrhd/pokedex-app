@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col cursor-pointer hover:bg-gray-100 hover:rounded">
     <div class="rounded bg-green-200">
-      <img src="https://www.pokepedia.fr/images/3/3f/Sprite_0001_HOME.png" alt="Bulbizarre">
+      <img :src="pokemon.image" :alt="pokemon.name">
     </div>
     <div class="flex justify-between items-center w-full p-4">
       <div class="left">

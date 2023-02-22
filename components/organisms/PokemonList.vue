@@ -34,7 +34,7 @@ const pokemons = ref([
         color: 'purple'
         }
     ],
-    image: 'https://www.pokepedia.fr/images/3/3f/Sprite_0001_HOME.png'
+    image: 'https://www.pokepedia.fr/images/5/52/Sprite_0002_HOME.png'
   }
 ])
 </script>
