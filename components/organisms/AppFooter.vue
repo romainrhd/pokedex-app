@@ -5,7 +5,7 @@
 </template>
 
 <script lang="ts" setup>
-import NavBar from '../atoms/NavBar.vue';
+import NavBar from './NavBar.vue';
 const emit = defineEmits(['open-search-modal']);
 
 const openSearchModal = () => {
