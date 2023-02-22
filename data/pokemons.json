@@ -1,0 +1,214 @@
+[
+  {
+    "nationalNumber": "001",
+    "name": "Bulbizarre",
+    "appearances": [
+      {
+        "picture": "https://www.pokepedia.fr/images/3/3f/Sprite_0001_HOME.png",
+        "isDefault": true,
+        "isShiny": false,
+        "types": [
+          {
+            "name": "Plante",
+            "color": "green"
+          },
+          {
+            "name": "Poison",
+            "color": "purple"
+          }
+        ],
+        "caught": true
+      },
+      {
+        "picture": "https://www.pokepedia.fr/images/6/6d/Sprite_0001_chromatique_HOME.png",
+        "isDefault": false,
+        "isShiny": true,
+        "types": [
+          {
+            "name": "Plante",
+            "color": "green"
+          },
+          {
+            "name": "Poison",
+            "color": "purple"
+          }
+        ],
+        "caught": false
+      }
+    ]
+  },
+  {
+    "nationalNumber": "002",
+    "name": "Herbizarre",
+    "appearances": [
+      {
+        "picture": "https://www.pokepedia.fr/images/5/52/Sprite_0002_HOME.png",
+        "isDefault": true,
+        "isShiny": false,
+        "types": [
+          {
+            "name": "Plante",
+            "color": "green"
+          },
+          {
+            "name": "Poison",
+            "color": "purple"
+          }
+        ],
+        "caught": true
+      },
+      {
+        "picture": "https://www.pokepedia.fr/images/f/f5/Sprite_0002_chromatique_HOME.png",
+        "isDefault": false,
+        "isShiny": true,
+        "types": [
+          {
+            "name": "Plante",
+            "color": "green"
+          },
+          {
+            "name": "Poison",
+            "color": "purple"
+          }
+        ],
+        "caught": false
+      }
+    ]
+  },
+  {
+    "nationalNumber": "003",
+    "name": "Florizarre",
+    "appearances": [
+      {
+        "picture": "https://www.pokepedia.fr/images/b/b3/Sprite_0003_%E2%99%82_HOME.png",
+        "isDefault": true,
+        "isShiny": false,
+        "types": [
+          {
+            "name": "Plante",
+            "color": "green"
+          },
+          {
+            "name": "Poison",
+            "color": "purple"
+          }
+        ],
+        "caught": false
+      },
+      {
+        "picture": "https://www.pokepedia.fr/images/3/3d/Sprite_0003_%E2%99%82_chromatique_HOME.png",
+        "isDefault": false,
+        "isShiny": true,
+        "types": [
+          {
+            "name": "Plante",
+            "color": "green"
+          },
+          {
+            "name": "Poison",
+            "color": "purple"
+          }
+        ],
+        "caught": false
+      },
+      {
+        "name": "Méga-Florizarre",
+        "picture": "https://www.pokepedia.fr/images/9/9c/Sprite_0003_M%C3%A9ga_HOME.png",
+        "isDefault": true,
+        "isShiny": false,
+        "types": [
+          {
+            "name": "Plante",
+            "color": "green"
+          },
+          {
+            "name": "Poison",
+            "color": "purple"
+          }
+        ],
+        "caught": false
+      },
+      {
+        "name": "Méga-Florizarre",
+        "picture": "https://www.pokepedia.fr/images/9/93/Sprite_0003_M%C3%A9ga_chromatique_HOME.png",
+        "isDefault": false,
+        "isShiny": true,
+        "types": [
+          {
+            "name": "Plante",
+            "color": "green"
+          },
+          {
+            "name": "Poison",
+            "color": "purple"
+          }
+        ],
+        "caught": false
+      },
+      {
+        "name": "Florizarre Gigamax",
+        "picture": "https://www.pokepedia.fr/images/6/6c/Sprite_0003_Gigamax_HOME.png",
+        "isDefault": true,
+        "isShiny": false,
+        "types": [
+          {
+            "name": "Plante",
+            "color": "green"
+          },
+          {
+            "name": "Poison",
+            "color": "purple"
+          }
+        ],
+        "caught": false
+      },
+      {
+        "name": "Florizarre Gigamax",
+        "picture": "https://www.pokepedia.fr/images/c/c4/Sprite_0003_Gigamax_chromatique_HOME.png",
+        "isDefault": false,
+        "isShiny": true,
+        "types": [
+          {
+            "name": "Plante",
+            "color": "green"
+          },
+          {
+            "name": "Poison",
+            "color": "purple"
+          }
+        ],
+        "caught": false
+      }
+    ]
+  },
+  {
+    "nationalNumber": "004",
+    "name": "Salamèche",
+    "appearances": [
+      {
+        "picture": "https://www.pokepedia.fr/images/d/dd/Sprite_0004_HOME.png",
+        "isDefault": true,
+        "isShiny": false,
+        "types": [
+          {
+            "name": "Feu",
+            "color": "orange"
+          }
+        ],
+        "caught": true
+      },
+      {
+        "picture": "https://www.pokepedia.fr/images/b/bf/Sprite_0004_chromatique_HOME.png",
+        "isDefault": false,
+        "isShiny": true,
+        "types": [
+          {
+            "name": "Feu",
+            "color": "orange"
+          }
+        ],
+        "caught": false
+      }
+    ]
+  }
+]

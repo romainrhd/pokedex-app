@@ -13,31 +13,18 @@
       </div>
     </header>
     <section class="mt-2">
-      <PokemonThumbnail :pokemon="pokemon"/>
+      <PokemonThumbnail v-if="pokemon" :appearance="pokemon.appearances[0]"/>
     </section>
-    <PokemonDetailsTabs :types="pokemon.types" />
+    <PokemonDetailsTabs v-if="pokemon" :types="pokemon.appearances[0].types" />
   </div>
 </template>
 <script setup lang="ts">
 import PokemonThumbnail from "~/components/atoms/PokemonThumbnail.vue";
 import PokemonDetailsTabs from "~/components/atoms/PokemonDetailsTabs.vue";
+import pokemonsData from "~/data/pokemons.json";
 
 const router = useRouter();
-const pokemon: Pokemon = ref({
-  nationalNumber: '001',
-  name: 'Bulbizarre',
-  types: [
-    {
-      name: 'Plante',
-      color: 'green'
-    }, {
-      name: 'Poison',
-      color: 'purple'
-    }
-  ],
-  image: 'https://www.pokepedia.fr/images/3/3f/Sprite_0001_HOME.png',
-  caught: true,
-});
+const pokemon = ref(pokemonsData.find(pokemon => pokemon.nationalNumber === router.currentRoute.value.params.id));
 
 const handleRouterBack = () => {
   router.back();

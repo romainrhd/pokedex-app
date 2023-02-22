@@ -17,7 +17,7 @@
     <LabelType v-for="type in types" :type="type" />
   </div>
   <div v-if="activeTab === 'forms'" class="grid grid-cols-4 gap-4">
-    <PokemonThumbnail :pokemon="pokemon" :mini="true"/>
+    <PokemonThumbnail :appearance="pokemon" :mini="true"/>
     <PokemonThumbnail :pokemon="pokemon" :mini="true"/>
     <PokemonThumbnail :pokemon="pokemon" :mini="true"/>
   </div>

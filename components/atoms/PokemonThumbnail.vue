@@ -1,13 +1,13 @@
 <template>
-  <div class="relative flex justify-center rounded" :class="'bg-' + pokemon.types[0].color">
-    <Icon v-if="pokemon.caught && !mini" class="absolute right-0 mt-2 mr-2" name="IconPokeball" font-size="25px" />
-    <img :src="pokemon.image" :alt="pokemon.name">
+  <div class="relative flex justify-center rounded" :class="'bg-' + appearance.types[0].color">
+    <Icon v-if="appearance.caught && !mini" class="absolute right-0 mt-2 mr-2" name="IconPokeball" font-size="25px" />
+    <img :src="appearance.picture" :alt="appearance.name">
   </div>
 </template>
 
 <script lang="ts" setup>
 defineProps<{
-  pokemon: Pokemon,
+  appearance: Appearance,
   mini?: boolean,
 }>();
 </script>
