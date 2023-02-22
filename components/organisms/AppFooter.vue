@@ -1,19 +1,14 @@
-
-import NavBar from '../atoms/NavBar.vue';
-
-
-import NavBar from '../atoms/NavBar.vue';
-
-
-import NavBar from '../atoms/NavBar.vue';
-
 <template>
   <footer class="flex flex-shrink w-full">
-    <NavBar />
+    <NavBar @open-search-modal="openSearchModal"/>
   </footer>
 </template>
 
 <script lang="ts" setup>
 import NavBar from '../atoms/NavBar.vue';
+const emit = defineEmits(['open-search-modal']);
 
+const openSearchModal = () => {
+  emit('open-search-modal');
+};
 </script>

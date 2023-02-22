@@ -7,6 +7,11 @@
         </NuxtLink>
       </li>
       <li>
+        <button class="cursor-pointer">
+          <Icon name="heroicons:magnifying-glass" font-size="32px" @click="openSearchModal"/>
+        </button>
+      </li>
+      <li>
         <NuxtLink to="/profile">
           <Icon name="heroicons:user" font-size="32px" />
         </NuxtLink>
@@ -24,3 +29,11 @@ li {
   @apply text-blue-500
 }
 </style>
+
+<script setup lang="ts">
+const emit = defineEmits(['open-search-modal']);
+
+const openSearchModal = () => {
+  emit('open-search-modal');
+};
+</script>

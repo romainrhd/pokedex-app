@@ -5,7 +5,7 @@
       <ModalSearch v-if="showModal" @close-search-modal="toggleModal"/>
       <slot />
     </main>
-    <AppFooter />
+    <AppFooter @open-search-modal="toggleModal"/>
   </div>
 </template>
 
