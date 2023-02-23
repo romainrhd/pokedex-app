@@ -17,9 +17,7 @@
     <LabelType v-for="type in types" :type="type" />
   </div>
   <div v-if="activeTab === 'forms'" class="grid grid-cols-4 gap-4">
-    <PokemonThumbnail :appearance="pokemon" :mini="true"/>
-    <PokemonThumbnail :pokemon="pokemon" :mini="true"/>
-    <PokemonThumbnail :pokemon="pokemon" :mini="true"/>
+    <PokemonThumbnail v-for="appearance in appearances" :appearance="appearance" :mini="true"/>
   </div>
 </template>
 
@@ -28,24 +26,8 @@ import LabelType from "~/components/atoms/LabelType.vue";
 import PokemonThumbnail from "~/components/atoms/PokemonThumbnail.vue";
 
 defineProps<{
-  types: PokemonType[]
+  appearances: Appearance[]
 }>();
 
 const activeTab = ref('types');
-
-const pokemon = ref({
-  nationalNumber: '001',
-  name: 'Bulbizarre',
-  types: [
-    {
-      name: 'Plante',
-      color: 'green'
-    }, {
-      name: 'Poison',
-      color: 'purple'
-    }
-  ],
-  image: 'https://www.pokepedia.fr/images/3/3f/Sprite_0001_HOME.png',
-  caught: true,
-});
 </script>

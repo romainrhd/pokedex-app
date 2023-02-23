@@ -15,7 +15,7 @@
     <section class="mt-2">
       <PokemonThumbnail v-if="pokemon" :appearance="pokemon.appearances[0]"/>
     </section>
-    <PokemonDetailsTabs v-if="pokemon" :types="pokemon.appearances[0].types" />
+    <PokemonDetailsTabs v-if="pokemon" :appearances="pokemon.appearances" />
   </div>
 </template>
 <script setup lang="ts">
