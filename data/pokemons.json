@@ -21,7 +21,7 @@
         "shiny": {
           "id": 2,
           "picture": "https://www.pokepedia.fr/images/6/6d/Sprite_0001_chromatique_HOME.png",
-          "isDefault": true,
+          "isDefault": false,
           "types": [
             {
               "name": "Plante",
@@ -59,7 +59,7 @@
         "shiny": {
           "id": 4,
           "picture": "https://www.pokepedia.fr/images/f/f5/Sprite_0002_chromatique_HOME.png",
-          "isDefault": true,
+          "isDefault": false,
           "types": [
             {
               "name": "Plante",
@@ -97,7 +97,7 @@
         "shiny": {
           "id": 6,
           "picture": "https://www.pokepedia.fr/images/3/3d/Sprite_0003_%E2%99%82_chromatique_HOME.png",
-          "isDefault": true,
+          "isDefault": false,
           "types": [
             {
               "name": "Plante",
@@ -197,7 +197,7 @@
         "shiny": {
           "id": 7,
           "picture": "https://www.pokepedia.fr/images/b/bf/Sprite_0004_chromatique_HOME.png",
-          "isDefault": true,
+          "isDefault": false,
           "types": [
             {
               "name": "Feu",
