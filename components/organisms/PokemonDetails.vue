@@ -13,8 +13,9 @@
           v-if="currentAppearance?.shiny"
           :name="showShiny ? 'heroicons:sparkles-solid' : 'heroicons:sparkles'"
           font-size="32px"
-          @click="toggleShiny"
+          class="cursor-pointer"
           :class="showShiny && 'text-amber-500'"
+          @click="toggleShiny"
         />
       </div>
     </header>
@@ -33,9 +34,10 @@
   </div>
 </template>
 <script setup lang="ts">
+import {Ref} from "vue";
+import pokemonsData from "~/data/pokemons.json";
 import PokemonThumbnail from "~/components/atoms/PokemonThumbnail.vue";
 import PokemonDetailsTabs from "~/components/atoms/PokemonDetailsTabs.vue";
-import pokemonsData from "~/data/pokemons.json";
 
 const router = useRouter();
 const pokemon: Ref<Pokemon|undefined> = ref(pokemonsData.find(pokemon => pokemon.nationalNumber === router.currentRoute.value.params.id));
