@@ -4,11 +4,13 @@
         type="email"
         class="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-black"
         placeholder="Email"
+        v-model="email"
     />
     <input
         type="password"
         class="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-black"
         placeholder="Mot de passe"
+        v-model="password"
     />
   </div>
   <div class="flex flex-col items-center justify-center space-y-2">
@@ -28,9 +30,13 @@
 <script lang="ts" setup>
 import { useAuthStore } from "~/stores/AuthStore";
 
+const email = ref("");
+const password = ref("");
+
 const authStore = useAuthStore();
 const { login } = authStore;
-const handleLogin = () => {
-  login();
+const handleLogin = async () => {
+  await login(email.value, password.value);
+  navigateTo("/");
 };
 </script>
