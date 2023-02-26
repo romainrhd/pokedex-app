@@ -19,6 +19,9 @@
     >
       Se connecter
     </button>
+    <NuxtLink to="/register" class="text-blue-500 hover:text-blue-700">
+      Je n'ai pas encore de compte
+    </NuxtLink>
   </div>
 </template>
 

@@ -34,6 +34,9 @@
     >
       S'inscrire
     </button>
+    <NuxtLink to="/login" class="text-blue-500 hover:text-blue-700">
+      J'ai déjà un compte
+    </NuxtLink>
   </div>
 </template>
 
