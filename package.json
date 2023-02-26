@@ -13,7 +13,14 @@
     "nuxt": "^3.2.2",
     "nuxt-icon": "^0.3.2"
   },
+  "overrides": {
+    "vue": "latest"
+  },
   "volta": {
     "node": "18.14.1"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.4.7",
+    "pinia": "^2.0.32"
   }
 }
