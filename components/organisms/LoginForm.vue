@@ -30,11 +30,13 @@
 <script lang="ts" setup>
 import { Ref } from "vue";
 import { useAuthStore } from "~/stores/AuthStore";
+import authGlobal from "~/middleware/auth.global";
+import {Store} from "pinia";
 
 const email: Ref<string> = ref("");
 const password: Ref<string> = ref("");
 
-const authStore  = useAuthStore();
+const authStore: Store  = useAuthStore();
 const { login } = authStore;
 const handleLogin = async () => {
   await login(email.value, password.value);

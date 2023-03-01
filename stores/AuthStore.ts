@@ -1,11 +1,11 @@
 import {defineStore} from "pinia";
 import {computed} from "#imports";
-import {Ref} from "vue";
+import {ComputedRef, Ref} from "vue";
 
 export const useAuthStore = defineStore('auth', () => {
   const jwt: Ref<string> =ref('');
 
-  const login = async (email, password) => {
+  const login: (email, password) => Promise<void> = async (email, password) => {
     const jwtRequest = await fetch('http://localhost:3333/api/login', {
       method: 'POST',
       headers: {
@@ -21,12 +21,12 @@ export const useAuthStore = defineStore('auth', () => {
     localStorage.setItem('jwt', jwt.value);
   };
 
-  const logout = () => {
+  const logout: () => void = () => {
     jwt.value = '';
     localStorage.removeItem('jwt');
   };
 
-  const isAuthenticated = computed(() => {
+  const isAuthenticated: ComputedRef<boolean> = computed(() => {
     if (process.browser) {
       if (localStorage.getItem('jwt') !== '') {
         jwt.value = localStorage.getItem('jwt');
