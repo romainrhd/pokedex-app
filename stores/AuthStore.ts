@@ -1,8 +1,9 @@
 import {defineStore} from "pinia";
 import {computed} from "#imports";
+import {Ref} from "vue";
 
 export const useAuthStore = defineStore('auth', () => {
-  const jwt =ref('');
+  const jwt: Ref<string> =ref('');
 
   const login = async (email, password) => {
     const jwtRequest = await fetch('http://localhost:3333/api/login', {

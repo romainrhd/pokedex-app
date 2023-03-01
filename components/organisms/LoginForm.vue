@@ -28,12 +28,13 @@
 </template>
 
 <script lang="ts" setup>
+import { Ref } from "vue";
 import { useAuthStore } from "~/stores/AuthStore";
 
-const email = ref("");
-const password = ref("");
+const email: Ref<string> = ref("");
+const password: Ref<string> = ref("");
 
-const authStore = useAuthStore();
+const authStore  = useAuthStore();
 const { login } = authStore;
 const handleLogin = async () => {
   await login(email.value, password.value);
