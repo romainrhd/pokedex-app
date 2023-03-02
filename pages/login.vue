@@ -6,6 +6,6 @@
 import LoginForm from "~/components/organisms/LoginForm.vue";
 
 definePageMeta({
-  layout: "auth",
+  layout: "auth"
 });
 </script>

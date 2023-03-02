@@ -1,5 +1,9 @@
 <template>
-  <div class="flex flex-col items-center justify-center space-y-2 w-full">
+  <div class="flex flex-col items-center justify-center space-y-2">
+    <IconPokeball class="w-20 h-20" />
+    <h1 class="text-3xl font-bold">Se connecter</h1>
+  </div>
+  <div class="flex flex-col items-center justify-center space-y-2 w-full md:w-1/2">
     <input
         type="email"
         class="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-black"
@@ -30,7 +34,6 @@
 <script lang="ts" setup>
 import { Ref } from "vue";
 import { useAuthStore } from "~/stores/AuthStore";
-import authGlobal from "~/middleware/auth.global";
 import {Store} from "pinia";
 
 const email: Ref<string> = ref("");
