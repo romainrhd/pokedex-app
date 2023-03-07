@@ -4,18 +4,8 @@
     <h1 class="text-3xl font-bold">Se connecter</h1>
   </div>
   <div class="flex flex-col items-center justify-center space-y-2 w-full md:w-1/2">
-    <input
-        type="email"
-        class="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-black"
-        placeholder="Email"
-        v-model="email"
-    />
-    <input
-        type="password"
-        class="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-black"
-        placeholder="Mot de passe"
-        v-model="password"
-    />
+    <Input type="email" placeholder="Email" v-model="email" />
+    <Input type="password" placeholder="Mot de passe" v-model="password" />
   </div>
   <div class="flex flex-col items-center justify-center space-y-2">
     <button
@@ -33,16 +23,20 @@
 
 <script lang="ts" setup>
 import { Ref } from "vue";
+import Input from "~/components/atoms/Input.vue";
 import { useAuthStore } from "~/stores/AuthStore";
-import {Store} from "pinia";
 
 const email: Ref<string> = ref("");
 const password: Ref<string> = ref("");
 
-const authStore: Store  = useAuthStore();
+const authStore = useAuthStore();
 const { login } = authStore;
 const handleLogin = async () => {
-  await login(email.value, password.value);
+  try {
+    await login(email.value, password.value);
+  } catch (error) {
+    console.error(error);
+  }
   navigateTo("/");
 };
 </script>

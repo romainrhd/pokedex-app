@@ -4,31 +4,11 @@
     <h1 class="text-3xl font-bold">S'inscrire</h1>
   </div>
   <div class="flex flex-col items-center justify-center space-y-2 w-full md:w-1/2">
-    <input
-        type="text"
-        class="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-black"
-        placeholder="Prénom"
-    />
-    <input
-        type="text"
-        class="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-black"
-        placeholder="Nom"
-    />
-    <input
-        type="email"
-        class="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-black"
-        placeholder="Email"
-    />
-    <input
-        type="password"
-        class="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-black"
-        placeholder="Mot de passe"
-    />
-    <input
-        type="password"
-        class="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-black"
-        placeholder="Confirmation de Mot de passe"
-    />
+    <Input type="text" placeholder="Prénom" />
+    <Input type="text" placeholder="Nom" />
+    <Input type="email" placeholder="Email" />
+    <Input type="password" placeholder="Mot de passe" />
+    <Input type="password" placeholder="Confirmation de Mot de passe" />
   </div>
   <div class="flex flex-col items-center justify-center space-y-2">
     <button
@@ -42,3 +22,6 @@
     </NuxtLink>
   </div>
 </template>
+<script setup lang="ts">
+import Input from "~/components/atoms/Input.vue";
+</script>
